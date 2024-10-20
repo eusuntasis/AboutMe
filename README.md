@@ -1,3 +1,3 @@
-# SSQ WEBSITE HOSTED ON .github.io :)
+# My Website hosted at github.io =)
 
-_ https://eusuntasis.github.io/ssqsite/
+- https://eusuntasis.github.io/MyWebsite/
