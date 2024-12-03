@@ -1,40 +1,190 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Acces blocat - AboutMe</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #2d2d2d;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 50px;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 30px;
-            border-radius: 10px;
-            background-color: #444;
-        }
-        h1 {
-            font-size: 36px;
-            color: #e74c3c;
-        }
-        p {
-            font-size: 18px;
-            margin: 20px 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1296175424627540011/1304421486043598918/Untitled.png?ex=672f54ad&is=672e032d&hm=ac4ae5fefa091345188a95368a06cb35c9081aeb1a9a3b927ecab2c2ba6b7786&=&format=webp&quality=lossless&width=404&height=404">
+
+  <title>About me</title>
+  <style>
+    /* CSS Styles */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0e0f13;
+      color: #f0f0f5;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 50px 30px;
+      background-color: #1b1f24;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      border-radius: 12px;
+      border: 1px solid #2d3238;
+    }
+
+    h1 {
+      color: #66fcf1;
+      text-align: center;
+    }
+
+    .accordion {
+      width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid #333;
+    }
+
+    .accordion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 20px;
+      background-color: #2b2f34;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .accordion-header:hover {
+      background-color: #3a3f44;
+    }
+
+    .accordion-header h3 {
+      color: #66fcf1;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .accordion-header i {
+      font-size: 24px;
+      color: #66fcf1;
+      transition: transform 0.3s;
+    }
+
+    .accordion-content {
+      padding: 20px;
+      display: none;
+      color: #c5c6c7;
+    }
+
+    .accordion-content.active {
+      display: block;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .social-links a {
+      color: #45a29e;
+      font-size: 24px;
+      margin: 0 12px;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #66fcf1;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Acces blocat în România</h1>
-        <p>Site-ul AboutMe este momentan inaccesibil din România din motive de securitate, ca urmare a măsurilor impuse de Morana Squad (MSD).</p>
-        <p>Vă recomandăm să vă păstrați securitatea și să respectați reglementările impuse.</p>
+  <div class="container">
+    <h1>About me</h1>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h3>Despre mine</h3>
+          <i class="accordion-icon fas fa-chevron-down"></i>
+        </div>
+        <div class="accordion-content">
+          <div class="profile">
+            <div class="profile-image">
+              <img src="https://media.discordapp.net/attachments/1296175424627540011/1304421486043598918/Untitled.png?ex=672f54ad&is=672e032d&hm=ac4ae5fefa091345188a95368a06cb35c9081aeb1a9a3b927ecab2c2ba6b7786&=&format=webp&quality=lossless&width=404&height=404" alt="Profile Picture">
+            </div>
+            <div class="profile-info">
+              <h3>Asis Sisu</h3>
+              <p>Salut! Sunt pasionat de cybersecurity și intelligence. Am experiență în python, ruby, html css and js, java, c, c#, c++, pearl, networking, penetration testing și lista continuă...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h3>Proiectele mele</h3>
+          <i class="accordion-icon fas fa-chevron-down"></i>
+        </div>
+        <div class="accordion-content">
+          <div class="space-y-6">
+            <div class="project">
+              <h3><a href="https://github.com/eusuntasis/AsisDDOS" style="color: #45a29e;">AsisDDOS</a></h3>
+              <p>A simple ddos(denial Distributed of services) tool</p>
+            </div>
+            <div class="project">
+              <h3><a href="https://github.com/eusuntasis/ubetterlikeme" style="color: #45a29e;">ubetterlikeme</a></h3>
+              <p>A simple malware written in python</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h3>Contact</h3>
+          <i class="accordion-icon fas fa-chevron-down"></i>
+        </div>
+        <div class="accordion-content">
+          <p>
+            Dacă vrei să mă contactezi, poți folosi următoarele canale:
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/eusuntasis" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/asis-sisu-a21749280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/therootedkiddie" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://youtube.com/@sisuitsme" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://tiktok.com/sisutheblackhat" target="_blank"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script>
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    const accordionContents = document.querySelectorAll('.accordion-content');
+    const accordionIcons = document.querySelectorAll('.accordion-icon');
+
+    accordionHeaders.forEach((header, index) => {
+      header.addEventListener('click', () => {
+        header.classList.toggle('active');
+        accordionContents[index].classList.toggle('active');
+        accordionIcons[index].classList.toggle('fa-chevron-up');
+        accordionIcons[index].classList.toggle('fa-chevron-down');
+        accordionHeaders.forEach((otherHeader, otherIndex) => {
+          if (otherIndex !== index) {
+            otherHeader.classList.remove('active');
+            accordionContents[otherIndex].classList.remove('active');
+            accordionIcons[otherIndex].classList.remove('fa-chevron-up');
+            accordionIcons[otherIndex].classList.add('fa-chevron-down');
+          }
+        });
+      });
+    });
+  </script>
+  <footer style="text-align: center; padding: 20px; color: #c5c6c7; background-color: #1b1f24;">
+    &copy; <script>document.write(new Date().getFullYear());</script> Asis Sisu. Toate drepturile rezervate.
+  </footer>
+  
 </body>
 </html>
